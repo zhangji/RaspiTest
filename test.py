@@ -1,7 +1,7 @@
-from gpiozero import PWMLED
+from gpiozero import PWMOutputDevice
 from time import sleep
 
-led = PWMLED(17)
+led = PWMOutputDevice(4)
 
 while True:
     led.value = 0  # off
